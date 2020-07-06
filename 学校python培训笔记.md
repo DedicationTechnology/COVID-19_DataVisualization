@@ -2,45 +2,11 @@
 
 ## 1.1python基础知识
 
-### 1.1.1列表
-
 1. 列表的性质：
 
    > 1.列表中每个元素都是可变的。
    >
    > 2.列表中可以存放各种数据类型的数值
-
-2. 练习题
-
-   - 题目
-
-     ![1](https://raw.githubusercontent.com/DedicationTechnology/picgo/master/img/1.jpg)
-
-   - 代码实现
-
-     ```python
-     """练习1：求曲边图形的面积【方法一：for循环】"""
-     # import math
-     #
-     # n = 10000  # 划分要分割的份数
-     # width = 2 * math.pi / n  # 求每一个矩形的宽度
-     # height = []  # height为所有矩形的端点横坐标对应的高度列表
-     # x = []  # x是所有矩形的端点横坐标的列表
-     # for i in range(n):
-     #     x.append(i * width)  # 得到所有矩形的端点横坐标
-     # for i in x:
-     #     height.append(abs(math.sin(i)))  # 得到所有矩形的端点横坐标对应的高度，abs()取绝对值是因为有一部分的sin()值为负数
-     # area = width * sum(height)  # sum()可以对列表中的所有元素进行求和
-     # print("曲边图形的面积为：" + str(area))
-     
-     """练习1：求曲边图形的面积【方法二：列表推导式】"""
-     # import math
-     #
-     # n = 10000
-     # width = 2 * math.pi / n
-     # area = [abs(math.sin(i * width)) * width for i in range(n)]  # area是一个包含每一个矩形面积的列表
-     # print("曲面图形的面积为：" + str(sum(area)))
-     ```
 
 3. zip()函数
 
@@ -71,5 +37,58 @@
    print(x)
    ```
 
-5. pass
+4. **运算符
+
+   ```python
+   x = 2
+   x *= 2 ** 2 ** 3 // 100
+   """2 ** 2 ** 3 // 100 的结果是2，**的优先级高于//，后者表示取整，2 ** 2 ** 3 的结果是2的8次方而不是4的3次方，
+   先算2**3"""
+   print(x)
+   y = 2 ** 2 ** 3
+   print(y)
+   ```
+
+5. 字符串为不可变类型
+
+   ```python
+   example = "abcd"
+   print(example.replace("a", "e"))  # replace()方法用来将a替换为b
+   print(example)  # 字符串为不可变类型
+   ```
+
+6. 另类的if else表示形式
+
+   ```python
+   """如果6>6则i=5,否则如果4>3则i=2,还不满足则i=3"""
+   i = 5 if 6 > 6 else (2 if 4 > 3 else 3)
+   print(i)
+   ```
+
+7. 另一种函数的定义形式
+
+   ```python
+   # 第二种函数定义的方式
+   a = lambda x: x + 2  # 定义一个函数，a为函数名，x为形参，x+2为返回值
+   b = a(2)
+   print(b)
+   c = lambda x: x[1] # 定义一个函数，c为函数名，x为形参，返回x中下标为1的元素
+   d = c([1,2,3])
+   print(d)
+   ```
+
+8. 列表推导式
+
+   ```python
+   # b = [i for i in range(1, 11)]  # 列表推导式，将每一个遍历的值放入列表中
+   ```
+
+9. 字典推导式
+
+   ```python
+   a = {i: i ** 2 for i in range(0,10)}  # :前面的i是键，后面的i ** 2是值
+   print(a)
+   ```
+
+10. pass
 
