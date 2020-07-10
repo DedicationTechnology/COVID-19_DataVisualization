@@ -149,10 +149,28 @@
 
     > python中文件的路径使用/而不是使用windows下的\
 
+#### 1.2python数据分析和应用
 
-#### 1.2python数据分析
+##### 1.2.1matplotlib数据可视化基础
 
-##### 1.2.1numpy模块
+1. 执行load npz文件是报错：Object arrays cannot be loaded when allow_pickle=False
 
+   > 错误说明：np.load() 缺少allow_pickle的权限
+   >
+   > 解决途径：在load方法中添加属性(修改allow_pickle为True)；np.load("npz路径", allow_pickle = True) 
 
+2. 绘图时设置中文标题显示出错的问题(输入如下代码)
 
+   ```python
+   #解决中文显示问题
+   plt.rcParams['font.sans-serif']=['SimHei']
+   plt.rcParams['axes.unicode_minus'] = False
+   ```
+
+3. 箱线图
+
+   ![20](https://raw.githubusercontent.com/DedicationTechnology/picgo/master/img/20.jpg)
+
+4. lines.markersize表示点的大小
+
+5. pass
