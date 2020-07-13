@@ -173,4 +173,52 @@
 
 4. lines.markersize表示点的大小
 
-5. pass
+##### 1.2.2panda统计数据基础
+
+1. 可以直接将外部的.sql文件直接拖入到mysql数据库中进行运行
+
+2. loc和iloc的一个区别
+
+   ```python
+   data1.iloc[2, 2]  # iloc方法查看指定行索引和指定列索引的数据
+   data1.loc[2, "dishes_id"]  # loc方法将列索引用列的名称来代替去查看指定位置的数据
+   data1.iloc[1:4, 2]  # 表示取出行索引为1~3列索引为2的数据
+   data1.loc[1:4, "dishes_id"]  # 表示取出行索引为1~4列名称为dishes_id的数据
+   ```
+
+3. 路径的书写
+
+   ```
+   "D:/text.xls"
+   r"D:\test.xls"
+   ```
+
+4. 数据库的读取
+
+   ```
+   pandas.read_sql()  # 能够读取数据库的一个表并实现查询操作
+   pandas.read_query()  # 能够读取数据的一个表但不能实现查询操作
+   pandas.read_sql_table()  # 能够实现查询操作但不能读取数据库的一个表
+   ```
+
+5. tsv文件的读取
+
+   ```
+   pd.read_csv("./tmp/chipotle.tsv", encoding="gbk", sep="\t")
+   ```
+
+6. mysql中查找表前10行的SQL语句
+
+   ```mysql
+   select * from 表名 where 1=1 limit 10
+   ```
+
+7. 查看数据集的行列数：shape方法
+
+8. 探索快餐数据实例：https://zhuanlan.zhihu.com/p/76905282
+
+9. unique与nunique的区别
+
+   > unique返回所有的唯一值，而nunique返回所有唯一值的总个数
+
+10. pass
