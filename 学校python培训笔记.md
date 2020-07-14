@@ -221,4 +221,36 @@
 
    > unique返回所有的唯一值，而nunique返回所有唯一值的总个数
 
-10. pass
+10. 横向堆叠和纵向堆叠
+
+    - 横向堆叠
+
+      ![23](https://raw.githubusercontent.com/DedicationTechnology/picgo/master/img/23.jpg)
+
+    - 纵向堆叠
+
+      ![22](https://raw.githubusercontent.com/DedicationTechnology/picgo/master/img/22.jpg)
+
+11. 创建数据框
+
+    ```python
+    # 方案一
+    a = pd.DataFrame({"name":["my", "your", "his", "her", "their"], "cpu":["i7", "i5", "i3", np.nan, "i5"]})  # 创建一个表格用键值对的方式进行创建，默认索引从0开始
+    ```
+
+    ```python
+    # 方案二
+    # 创建一个数据框的方式，第一个[]表示数据为缺失值,index表示索引就是横坐标的属性，columns表示列属性的名称
+    sim = pd.DataFrame([], index=["amounts", "counts", "dishes_name"],
+                      columns=["amounts", "counts", "dishes_name"])
+    ```
+
+12. 哑变量处理
+
+    ![24](https://raw.githubusercontent.com/DedicationTechnology/picgo/master/img/24.jpg)
+
+13. 离散化处理
+
+    ![25](https://raw.githubusercontent.com/DedicationTechnology/picgo/master/img/25.jpg)
+
+14. pass 
