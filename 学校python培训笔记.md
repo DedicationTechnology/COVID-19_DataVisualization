@@ -253,4 +253,8 @@
 
     ![25](https://raw.githubusercontent.com/DedicationTechnology/picgo/master/img/25.jpg)
 
-14. pass 
+14. 线性回归的分类
+
+    > 分段回归不属于线性回归
+
+15. pass
