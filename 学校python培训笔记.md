@@ -262,4 +262,21 @@
 
 ##### 1.3.1MatPlotlib可视化
 
-1. 
+1. 在使用pandas将时间类型转换为DatetimeIndex后想通过weekday_name方法得到具体日期是星期几时报错
+
+   > 报错的提示是：AttributeError: ‘DatetimeIndex’ object has no attribute 'weekday_name’
+   >
+   > 解决方案1：回退pandas的版本，在cmd中输入：pip install --upgrade pandas==0.25.3，实测这种方法可以快速解决该问题
+   >
+   > 解决方案2：https://github.com/facebook/prophet/issues/1304
+
+##### 1.3.2Pyecharts可视化
+
+1. 画图时给y轴赋值使用yaxis_data时报错：TypeError: add_yaxis() got an unexpected keyword argument 'yaxis_data'
+
+   > 由于版本更新的问题，方法的相关使用一直在变化，对y轴进行赋值不能用yaxis_data，要用y_axis
+
+2. pyecharts使用官网：http://pyecharts.org/#/
+
+3. 
+
