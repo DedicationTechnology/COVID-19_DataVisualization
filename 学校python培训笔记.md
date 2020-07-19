@@ -278,4 +278,30 @@
 
 2. pyecharts使用官网：http://pyecharts.org/#/
 
+#### 1.4python网络爬虫
 
+##### 1.4.1静态网页的爬取
+
+1. 请求头hear的User-Agent查找
+
+   - 打开要爬取的url网址，然后按F12，之后刷新该网页
+
+     ![28](https://raw.githubusercontent.com/DedicationTechnology/picgo/master/img/28.jpg)
+
+   - 然后在head下找到user-agent并进行复制即可
+
+     ![29](https://raw.githubusercontent.com/DedicationTechnology/picgo/master/img/29.jpg)
+
+2. 谷歌开发者工具面板介绍
+
+   ![30](https://raw.githubusercontent.com/DedicationTechnology/picgo/master/img/30.jpg)
+
+3. python正则表达式
+
+   - 正则表达式的广义化
+
+     ![31](E:\图片\csdn图片\31.jpg)
+
+   - pass
+
+4. pass
