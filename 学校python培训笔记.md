@@ -310,4 +310,21 @@
 
    > 通过查看网页的源代码，然后按ctrl+f进行查找，如果发现网页上显示的文字在源代码中无法找到，则该网页是动态网页，反则是静态网页
 
-2. pass
+
+##### 1.4.3模拟登录
+
+1. 人工识别验证码
+
+   - 如何找到验证码的位置(链接)
+
+     ![36](https://raw.githubusercontent.com/DedicationTechnology/picgo/master/img/36.jpg)
+
+2. 使用代理IP跳过验证码
+
+   - 获取代理IP的方式
+
+     ![37](E:\图片\csdn图片\37.jpg)
+
+   - 免费的代理IP获取：搜索高匿IP
+
+3. pass
